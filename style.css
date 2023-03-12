@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header-logo {
+   color: #fff;
+   font-weight: 700;
+   text-decoration: none;
+   font-size: 30px;
+   font-family: 'Rubik Iso', cursive;
+   width: 60%;
+
+}
+
+.humba-logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Rubik Iso', cursive;
+    width: 60%;
+} 
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
+    font-family: 'Roboto', sans-serif;
+}
+.banner-holder {
+    width: 100%;
+    height: 50vh;
+    background-image:#da56b7;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#da56b7, #F6F0C4);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.navbar ul li a:hover {
+    color: #333;
+}
+
+.dropdown_menu {
+    display: none;
+    background-color: #e059a5;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.navbar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    margin: 0 -25px;
+    z-index: 999;
+    color:#b71f72;
+}
+
+.navbar ul li:hover .dropdown_menu ul {
+    display: block;
+    position: relative;
+    margin: 15px;
+    margin-top: 2px;
+    
+    
+}
+
+.navbar ul li:hover .dropdown_menu ul li {
+    width: 100%;
+    padding: 5px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+h2 {
+    margin-top: 20px;
+}
+
+body {
+    background-image: linear-gradient(#da56b7, #F6F0C4);
+    background-size: cover;
+    background-position: center;
+}
+
+ol > li::marker {
+    font-weight: bold;
+  }
+
+ol {
+    line-height: 30px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 35px auto;
+    padding: 35px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-color: white;
+}
+.left,
+.right {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;   
+}
+
+h1 {
+    font-size: 36px;
+    text-underline-offset: 20px;
+    margin-top: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px 10px;
+    border: 1px solid #F9CEE6;
+}
+
+th {
+    background-color: #ad1b6e;
+    color: white;
+}
+
+.img-holder {
+    border: 10px solid #814768;
+    margin: 35px;
+    border-radius: 15px;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
