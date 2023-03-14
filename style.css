@@ -11,7 +11,7 @@
    text-decoration: none;
    font-size: 30px;
    font-family: 'Rubik Iso', cursive;
-   width: 800px;
+   width: 50%;
 }
 
 .humba-logo {
@@ -20,7 +20,7 @@
     text-decoration: none;
     font-size: 30px;
     font-family: 'Rubik Iso', cursive;
-    width: 60%;
+    width: 50%;
 } 
 
 .burger-logo {
@@ -29,7 +29,7 @@
     text-decoration: none;
     font-size: 30px;
     font-family: 'Rubik Iso', cursive;
-    width: 60%;
+    width: 50%;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
@@ -52,12 +52,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
 }
 
 .navbar {
-    width: 95%;
+    width: 100%;
     margin: auto;
-    padding: 40px 0;
+    padding: 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+	
 }
 
 .logo {
@@ -66,11 +67,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
 }
 
 .navbar ul li {
-    list-style: none;
+    list-style-type: none;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 4px;
     position: relative;
-    width: 95px;
+    width: 120px;
+
+	
 }
 
 .navbar ul li a {
@@ -145,6 +148,8 @@ body {
     background-image: linear-gradient(#da56b7, #F6F0C4);
     background-size: cover;
     background-position: center;
+	
+	
 }
 
 ol > li::marker {
@@ -159,11 +164,13 @@ ol {
     position: relative;
     display: flex;
     width: 70%;
-    margin: 35px auto;
+    margin: 50px auto;
     padding: 35px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     background-color: white;
+	margin-top: 10%;
+
 }
 .left,
 .right {
