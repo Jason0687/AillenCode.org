@@ -2,63 +2,95 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
-.header-logo {
+.header-logo, .humba-logo, .burger-logo, .sisig-logo{
    color: #fff;
    font-weight: 700;
    text-decoration: none;
    font-size: 30px;
    font-family: 'Rubik Iso', cursive;
-   width: 50%;
+   width: 35%;
 }
 
-.humba-logo {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Rubik Iso', cursive;
-    width: 50%;
-} 
 
-.burger-logo {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Rubik Iso', cursive;
-    width: 50%;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td, input {
     font-family: 'Roboto', sans-serif;
-}
-.banner-humba {
-    width: 100%;
-    height: 50vh;
-    background-image:#da56b7;
-    background-size: cover;
-    background-position: center;
 }
 
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#da56b7, #F6F0C4);
+    background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .navbar {
+    background-image: linear-gradient(#da56b7, #F6F0C4);
     width: 100%;
     margin: auto;
-    padding: 30px 0;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 	
+}
+
+.search-bar {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    height: 35px;
+    line-height: 35px;
+    
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+.search-bar span {
+    display: inline;
+    color: #000;
+    font-size: 20px;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    max-width: 380px;
+}
+
+.search-bar span:hover {
+    color: #fff;
+}
+/*
+.search-bar span::after {
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+*/
+.search-bar span:hover::after {
+    width: 100%;
 }
 
 .logo {
@@ -69,16 +101,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
 .navbar ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 4px;
+    margin: 0 2px;
     position: relative;
-    width: 120px;
 
-	
 }
 
 .navbar ul li a {
     font-size: 20px;
     text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    margin: 0 0 0 2px;
     color: #fff;
     font-weight: bold;
     transition: all 0.5s;
@@ -90,8 +124,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
 .dropdown_menu {
     display: none;
     background-color: #e059a5;
-    margin-top: 5px;
+    margin-top: 10px;
     border-radius: 5px;
+
 }
 
 .navbar ul li:hover .dropdown_menu {
@@ -99,15 +134,16 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td {
     position: absolute;
     left: 0%;
     top: 100%;
-    margin: 0 -25px;
+    margin: 0 -5px;
     z-index: 999;
     color:#b71f72;
+    width: 180px;
 }
 
 .navbar ul li:hover .dropdown_menu ul {
     display: block;
     position: relative;
-    margin: 15px;
+    margin: 0%;
     margin-top: 2px;
     
     
@@ -145,10 +181,9 @@ h2 {
 }
 
 body {
-    background-image: linear-gradient(#da56b7, #F6F0C4);
     background-size: cover;
     background-position: center;
-	
+	background-image: url(img/background.jpg);
 	
 }
 
