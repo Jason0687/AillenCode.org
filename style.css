@@ -169,7 +169,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, th, tr, td, input {
 .content h1 {
     font-size: 100px;
     margin-top: 5px;
-    
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
 }
 
 .content p {
