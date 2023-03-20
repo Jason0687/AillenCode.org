@@ -9,14 +9,14 @@
    color: #fff;
    font-weight: 700;
    text-decoration: none;
-   font-size: 20px;
+   font-size: 30px;
    font-family: 'Tilt Prism', cursive;
-   width: 40%;
+   width: 45%;
    margin: 0%;
 }
 
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .header-logo, .humba-logo, .burger-logo, .sisig-logo {
         width: 100%;
     }
@@ -161,7 +161,7 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    margin-top: 300px;
+    margin-top: 120px;
     background-image: linear-gradient(#da56b7, #F6F0C4);
 }
 
@@ -177,13 +177,12 @@
     font-weight: 6em;
     line-height: 25px;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .CookingGirl {
-    width: 20rem;
+    width: 30rem;
 }
-
 
 
 h2 {
@@ -262,9 +261,9 @@ th {
 
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 10px;
+    font-size: 25px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -272,7 +271,7 @@ th {
 }
   
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
   
 
