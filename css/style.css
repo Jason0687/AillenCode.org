@@ -135,7 +135,7 @@
     border-radius: 5em;
 }
 
-.search-bar span {
+.search-bar a {
     display: inline-block;
     color: #000;
     font-size: 1em;
@@ -146,11 +146,11 @@
     max-width: 23em;
 }
 
-.search-bar span:hover {
+.search-bar a:hover {
     color: #fff;
 }
 
-.search-bar span:hover::after {
+.search-bar a:hover::after {
     width: 100%;
 }
 
@@ -161,7 +161,7 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    margin-top: 120px;
+    margin-top: 28em;
     background-image: linear-gradient(#da56b7, #F6F0C4);
 }
 
@@ -257,7 +257,67 @@ th {
     display: block;
     border-radius: 5px;
 }
+/* button */
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #dd4b39;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
+span {
+    background: #ee55e4;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.next-page {
+    background-color: #3B5998;
+    width: 90%;
+    height: 100vh;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+.one {
+    width: 46%;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    text-align: justify;
+    position: relative;
+}
+
+
+
+.two {
+    width: 46%;
+    margin: 20px auto;
+}
 
 
 .fa {
@@ -274,7 +334,6 @@ th {
     opacity: 0.8;
 }
   
-
 .fa-facebook {
     background: #3B5998;
     color: white;
