@@ -24,7 +24,7 @@
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: calc(200vh - 65px);
     background-image: linear-gradient(#da56b7, #da56b7);
     background-size: cover;
     background-position: center;
@@ -33,8 +33,8 @@
 .navbar {
     background-image: linear-gradient(#da56b7, #da56b7);
     width: 100%;
-    margin: 0 auto;
-    padding-top: 5px;
+    height: 60px;
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,8 +47,8 @@
 
 .logo {
     width: 75px;
+    margin-right: 0;
     cursor: pointer;
-
 }
 
 .navbar ul {
@@ -161,7 +161,7 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    margin-top: 28em;
+    margin-top: 48em;
     background-image: linear-gradient(#da56b7, #F6F0C4);
 }
 
@@ -293,29 +293,59 @@ button:hover {
 }
 
 .next-page {
-    background-color: #3B5998;
-    width: 90%;
+    background-color: #A765BC;
+    width: 100%;
     height: 100vh;
     margin: 10px auto;
-    border-radius: 10px;
     display: flex;
+    align-items: center;
 }
 
 .one {
-    width: 46%;
+    width: 50%;
     letter-spacing: 2px;
     padding: 10px;
     margin: 20px auto;
     text-align: center;
-    display: flex;
-    text-align: justify;
+    display: inline-block;
+    text-align: center;
     position: relative;
 }
 
+.one h1 {
+    font-weight: 400;
+}
 
+.hero-btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #125688;
+    color: #fff;
+    border: none;
+    height: 70px;
+    width: 200px;
+    border-radius: 37px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+
+.hero-btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.Chef-img {
+    width: 380px;
+    margin-top: 38px;
+}
 
 .two {
-    width: 46%;
+    width: 50%;
     margin: 20px auto;
 }
 
