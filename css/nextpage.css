@@ -1,17 +1,22 @@
 
 .food p {
     font-family: 'Tangerine', cursive;
+    text-align: center;
     letter-spacing: 5px;
     font-size: 50px;
     font-weight: 700;
-    color: #d6238b;
+    color: #d82c82;
     margin-bottom: 40px;
 
 }
 
 .food h1 {
-    color: #000;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 70px;
+    color: #fff;
     margin-top: 20px;
+    text-align: center;
 }
 
 
@@ -20,13 +25,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
     
 }
 
-/*Bread*/
+/*Cupdakes*/
 
 .bread1-container {
     position: relative;
@@ -55,6 +60,11 @@
     transition: opacity 0.25s;
 }
 
+.bread1-img-ovelay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
 .bread1-img-ovelay--blur {
     backdrop-filter: blur(5px);
 }
@@ -64,16 +74,23 @@
     opacity: 1;
 }
 
+.bread1-img-ovelay:hover > * {
+    transform: translateY(0);
+}
+
 .bread1-title {
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 5px;
+    text-align: center;
     font-family: 'Anton', sans-serif;
 }
 
 .img-description {
     font-size: 1.25em;
-    margin-top: 0.25em;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-top: 10px;
     letter-spacing: 5px;  
 }   
 
@@ -107,6 +124,11 @@
     transition: opacity 0.25s;
 }
 
+.bread2-img-ovelay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
 .bread2-img-ovelay--blur {
     backdrop-filter: blur(5px);
 }
@@ -115,19 +137,27 @@
     opacity: 1;
 }
 
+.bread2-img-ovelay:hover > * {
+    transform: translateY(0);
+}
+
 
 .bread2-title {
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 5px;
+    text-align: center;
     font-family: 'Anton', sans-serif;
 }
 
 .img2-description {
     font-size: 1.25em;
-    margin-top: 0.25em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 10px;
     letter-spacing: 5px;  
-}
+}   
+
 
 /*Waffles pancakes*/
 
@@ -159,6 +189,11 @@
     transition: opacity 0.25s;
 }
 
+.bread3-img-ovelay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
 .bread3-img-ovelay--blur {
     backdrop-filter: blur(5px);
 }
@@ -167,18 +202,24 @@
     opacity: 1;
 }
 
+.bread3-img-ovelay:hover > * {
+    transform: translateY(0);
+}
 
 .bread3-title {
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 5px;
+    text-align: center;
     font-family: 'Anton', sans-serif;
 }
 
 .img3-description {
     font-size: 1.25em;
     margin-top: 0.25em;
-    letter-spacing: 5px;  
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -212,6 +253,11 @@
     transition: opacity 0.25s;
 }
 
+.bread4-img-ovelay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
 .bread4-img-ovelay--blur {
     backdrop-filter: blur(5px);
 }
@@ -220,10 +266,15 @@
     opacity: 1;
 }
 
+.bread4-img-ovelay:hover > * {
+    transform: translateY(0);
+}
+
 .bread4-title {
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 5px;
+    text-align: center;
     font-family: 'Anton', sans-serif;
 }
 
@@ -231,4 +282,7 @@
     font-size: 1.25em;
     margin-top: 0.25em;
     letter-spacing: 5px;  
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 5px; 
 }

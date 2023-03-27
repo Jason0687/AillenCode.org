@@ -12,23 +12,8 @@
    font-size: 30px;
    font-family: 'Tilt Prism', cursive;
    flex-direction: row;
-   margin: 0%;
 }
 
-
-@media (min-width: 1440px) {
-    .header-logo, .humba-logo, .burger-logo, .sisig-logo {
-        width: 100%;
-    }
-}
-
-.banner {
-    width: 100%;
-    height: calc(200vh - 65px);
-    background-image: linear-gradient(#da56b7, #da56b7);
-    background-size: cover;
-    background-position: center;
-}
 
 .navbar {
     background-image: linear-gradient(#da56b7, #da56b7);
@@ -163,27 +148,28 @@
 
 }
 
-
-
-
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.Hero-mainContent {
+    width: 100%; 
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    padding-top: 180px;
     text-align: center;
-    color: #fff;
-    margin-top: 48em;
-    background-image: linear-gradient(#da56b7, #F6F0C4);
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(#da56b7, #da56b7);    
 }
 
-.content h1 {
+.contain h1 {
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
     font-size: 4em;
     letter-spacing: 10px;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    align-items: center;
+    color: #fff;
 }
 
-.content p {
+.contain p {
     font-size: 20px;
     margin: 20px;
     font-weight: 6em;
@@ -202,6 +188,8 @@ h2 {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-position: center;
 	background-image: linear-gradient(#da56b7, #F6F0C4);
@@ -214,6 +202,8 @@ ol > li::marker {
 
 ol {
     line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
 }
 
 .container {
@@ -221,7 +211,7 @@ ol {
     display: flex;
     width: 90%;
     margin: 20px auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     background-color: white;
 	margin-top: 10%;
@@ -234,13 +224,17 @@ ol {
     box-sizing: border-box;   
 }
 
+.left {
+    margin-top: 60px;
+}
+
 h1 {
     font-size: 36px;
     text-underline-offset: 20px;
     margin-top: 10px;
 }
 
-table{
+table  {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -269,6 +263,113 @@ th {
     display: block;
     border-radius: 5px;
 }
+
+@media (max-width: 1440px) {
+    .container {
+        width: 90%;
+        padding: 10px 10px 10px 10px;
+    }
+
+}
+@media (max-width: 1228px) {
+    
+    h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    th, td {
+        font-size: 18px;
+    }
+    
+    th {
+        font-size: 18px;
+    }
+
+    ol {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 940px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 18px;
+    }
+    
+    th {
+        font-size: 18px;
+    }
+
+    ol {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        top: 40px;
+        margin-bottom: 60px;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .img-holder img {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    th, td {
+        font-size: 20px;
+    }
+    
+    th {
+        font-size: 17px;
+    }
+
+    ol {
+        font-size: 17px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
 /* button */
 
 
@@ -276,7 +377,6 @@ th {
     background-color: #A765BC;
     width: 100%;
     height: 100vh;
-    margin: 10px auto;
     display: flex;
     align-items: center;
 }
@@ -287,13 +387,19 @@ th {
     padding: 10px;
     margin: 20px auto;
     text-align: center;
-    display: inline-block;
-    text-align: center;
     position: relative;
 }
 
 .one h1 {
-    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #dfdfdf;
+}
+
+.one p {
+    color: #fff;
 }
 
 .hero-btn {
@@ -301,7 +407,8 @@ th {
     display: inline-block;
     text-align: center;
     margin-top: 100px;
-    background-color: #125688;
+    font-family: 'Crete Round', serif;
+    background-color: #d82c82;
     color: #fff;
     border: none;
     height: 70px;
