@@ -119,6 +119,16 @@
 
     .Hero-mainContent {
         width: auto;
+        height: 100vh;
+    }
+
+    .Home_girl {
+        width: 100%;
+    }
+
+    .contain h1 {
+        font-size: 50px;
+        text-align: center;
     }
 
     .next-page {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/about.css">
     
     <link rel="icon" href="img/logo.png.png" type="icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +35,8 @@
                         <a href="#">Recipes</a>
                         <div class="dropdown_menu">
                             <ul>
-                                <li><a href="ChocolateCookies.html">Chocolate Cookies</a></li>
-                                <li><a href="Blueberry Cheesecake.html">Blueberry Cheesecake</a></li>
+                                <li><a href="ChocolateCookies.html">Cookies</a></li>
+                                <li><a href="Blueberry Cheesecake.html">Cheesecake</a></li>
                                 <li><a href="Cinnabon.html">Cinnabon</a></li>
                                 <li><a href="Brownies.html">Brownies</a></li>
                                 <li><a href="Doughnuts.html">Doughnuts</a></li>
@@ -51,34 +52,32 @@
             </div>
             </nav>
     </header>
-    <section class="about">
-        <div class="main">
-            <img src="img/jeson.png">
-            <div class="about-text">
-                <h1>Jason Piit</h1>
-                <h5>Developer <span class="designer"> &amp; Designer </span></h5>
-                <p>We're John and Jai, co-founders of hydrant. our journey 
-                    started when both us John, a scientist, and Jai, a finance 
-                    onsultant were trying to solve tge same problem in opposite 
-                    sides of the US. After a friend connected us, the rest is 
-                    history.</p>
-                    <button type="button">Let's Talk</button>
-            </div>
+    </section>
+    <div class="container-col">
+        <div class="header-col">
+            <h1>About Us</h1>
+        </div>
+        <div class="sub-container-col">
+        <div class="team-col">
+            <img src="img-about/Jason.jpg"  alt="">
+            <div class="name-col">Jason Piit</div>
+            <div class="design">Developer</div>
+            <div class="about-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 
+            <button type="button" class="btn">Let's Talk</button>
         </div>
-    </section>
-    <section class="about">
-        <div class="main">
-            <img src="img/dramatic.jpg">
-            <div class="about-text">
-                <h1>Aillen Gonzaga</h1>
-                <h5>Developer <span class="designer"> &amp; Designer </span></h5>
-                <p>Hello, You can call me Ai and I am a passionate web developer. As a student, I am constantly learning and growing in my field, and 
-                    I am excited to bring my skills to this project.</p>
-                    <button type="button">Let's Talk</button>
-            </div>
+        <div class="team-col">
+            <img src="img-about/Aillen.jpg"  alt="">
+            <div class="name-col">Aillen Gonzaga</div>
+            <div class="design">Designer</div>
+            <div class="about-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+            <button type="button" class="btn">Let's Talk</button>
         </div>
-    </section>
+        </div>
+    </div>
     <footer class="footer-container">
         <div class="footer-content">
             <h3>Bake With Me</h3>
@@ -95,12 +94,13 @@
             <p>copyright &copy;2023 BakeWithMe. designed Jason &amp; Aillen</p>
         </div>
     </footer> 
-    <script>
-        const toggleBtn = document.getElementsByClassName('toggle_btn')[0]
-        const navbarLinks = document.getElementsByClassName('nav_links') [0]
+<script>
+    const toggleBtn = document.getElementsByClassName('toggle_btn')[0]
+    const navbarLinks = document.getElementsByClassName('nav_links') [0]
 
-        toggleBtn.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active')
-        })
-    </script>
+    toggleBtn.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
+</body>
 </html>

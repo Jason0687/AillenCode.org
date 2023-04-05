@@ -69,7 +69,7 @@
 .dropdown_menu {
     display: none;
     background-color: #e059a5;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
 
 }
@@ -78,18 +78,18 @@
     display: block;
     position: absolute;
     left: 0%;
-    top: 100%;
+    top: 30px;
     margin: 0 -5px;
     z-index: 999;
     color:#dfdfdf;
-    width: 11em;
+    width: 12em;
 }
 
 .nav_links li:hover .dropdown_menu ul {
     display: block;
     position: relative;
     margin: 1em;
-    margin-top: 2px;
+    margin-top: 10px;
     
 }
 
@@ -152,11 +152,16 @@
     width: 100%; 
     height: calc(100vh - 60px);
     margin-top: 60px;
-    padding-top: 180px;
+    padding-top: 140px;
     text-align: center;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(#da56b7, #da56b7);    
+    background-image: linear-gradient(#da56b7, #F6F0C4);    
+}
+
+.Home_girl {
+    width: 300px;
+    
 }
 
 .contain h1 {

@@ -1,64 +1,94 @@
-* {
-    padding: 0;
-    margin: 0;
-
-}
-
-.about {
-    width: 100%;
-    padding: 78px 0px;
+.container-col {
+    text-align: center;
     background-image: linear-gradient(#da56b7, #F6F0C4);
 }
 
-.about img {
-    height: auto;
-    width: 300px;
-    border-radius: 210px;
-}
-
-.about-text {
-    width: 500px;
-}
-
-.main {
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about-text h1 {
-    color: white;
-    font-size: 50px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.about-text h5 {
-    color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
-
-.about-text h5 > span {
-    color: #f9004d;
-}
-
-.about-text p {
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
-
-button {
-    background: #f9004d;
+.header-col {
+    padding-top: 60px;
     color: #fff;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.header-col h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans'
+}
+
+.sub-container-col {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-col:hover {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.team-col {
+    margin: 10px;
+    padding: 22px;
+    max-width: 40%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.team-col img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.name-col {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans'
+}
+
+.design {
+    font-style: italic;
+    color: #000;
+    font-size: 30px;
+}
+
+.about-col {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #444;
+}
+
+.team-col .social-links {
+    margin: 14px;
+}
+
+.team-col .social-links a {
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    transition: .4s;
+    margin-right: 25px;
+}
+
+.team-col .social-links a i {
+    transform: scale(1.5);
+}
+
+.team-col .social-links a i {
+    color: #444;
+}
+
+.btn {
+    background: #f9004d;
+    color: #000;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -67,59 +97,14 @@ button {
     transition: .4s;
 }
 
-button:hover {
+.btn:hover {
     background: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
 
-
-
-@media (max-width: 1440px){
-    section {
-        padding: 80px 3%;
-        transition: .2s;
-    }
-    
-    .about-text h5 {
-        font-size: 30px;
-    }
-
-    .about-text h1 {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    
-    .about-text p {
-        margin-bottom: 3rem;
-        align-items: center;
-    }
-}
-
-@media (max-width: 1000px){
-    .about {
-        grid-gap: 2rem;
-        transition: .3s;
-    }
-}
-
-@media (max-width: 850px){
-    .about {
-        grid-template-columns: 1fr;
-    }
-    .about-text {
-        order: 2;
-    }
-    .about img{
-        max-width: 50%;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .main {
-        flex-direction: column;
+@media screen and (max-width: 600px) {
+    .team-col {
+        max-width: 100%;
     }
 }

@@ -23,6 +23,7 @@
 .bread-content {
     margin-top: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
@@ -43,190 +44,39 @@
     width: 100%;
     height: 100%;
 }
-
-.bread1-img-ovelay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.bread1-img-ovelay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.bread1-img-ovelay--blur {
-    backdrop-filter: blur(5px);
-}
-
-
-.bread1-img-ovelay:hover {
-    opacity: 1;
-}
-
-.bread1-img-ovelay:hover > * {
-    transform: translateY(0);
-}
-
-.bread1-title {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-.img-description {
-    font-size: 1.25em;
-    font-family: 'Roboto';
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 5px;  
-}   
+ 
 
 /*Salted Caramel Brownies*/
 
 .bread2-container {
-    position: relative;
+
     width: 300px;
 }
 
 .bread2 {
     display: block;
-    display: block;
     width: 100%;
     height: 100%;
 }
 
-.bread2-img-ovelay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.bread2-img-ovelay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.bread2-img-ovelay--blur {
-    backdrop-filter: blur(5px);
-}
-
-.bread2-img-ovelay:hover {
-    opacity: 1;
-}
-
-.bread2-img-ovelay:hover > * {
-    transform: translateY(0);
-}
-
-
-.bread2-title {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-.img2-description {
-    font-size: 1.25em;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 5px;  
-}   
 
 
 /*Waffles pancakes*/
 
 .bread3-container {
-    position: relative;
     width: 300px;
 }
 
 .bread3 {
     display: block;
-    display: block;
     width: 100%;
     height: 100%;
-}
-
-.bread3-img-ovelay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.bread3-img-ovelay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.bread3-img-ovelay--blur {
-    backdrop-filter: blur(5px);
-}
-
-.bread3-img-ovelay:hover {
-    opacity: 1;
-}
-
-.bread3-img-ovelay:hover > * {
-    transform: translateY(0);
-}
-
-.bread3-title {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-.img3-description {
-    font-size: 1.25em;
-    margin-top: 0.25em;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 10px;
 }
 
 
 /*Waffles pancakes*/
 
 .bread4-container {
-    position: relative;
     width: 300px;
 }
 
@@ -235,54 +85,4 @@
     display: block;
     width: 100%;
     height: 100%;
-}
-
-.bread4-img-ovelay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.bread4-img-ovelay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.bread4-img-ovelay--blur {
-    backdrop-filter: blur(5px);
-}
-
-.bread4-img-ovelay:hover {
-    opacity: 1;
-}
-
-.bread4-img-ovelay:hover > * {
-    transform: translateY(0);
-}
-
-.bread4-title {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-.img4-description {
-    font-size: 1.25em;
-    margin-top: 0.25em;
-    letter-spacing: 5px;  
-    margin-top: 10px;
-    text-align: center;
-    letter-spacing: 5px; 
 }
