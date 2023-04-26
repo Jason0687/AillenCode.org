@@ -68,8 +68,8 @@
 
 .dropdown_menu {
     display: none;
-    background-color: #e059a5;
-    margin-top: 20px;
+    background-color: #a73a76;
+    margin-top: 0;
     border-radius: 5px;
 
 }
@@ -78,18 +78,16 @@
     display: block;
     position: absolute;
     left: 0%;
-    top: 30px;
-    margin: 0 -5px;
+    top: 35px;
+    margin: -10px;
     z-index: 999;
     color:#dfdfdf;
-    width: 12em;
+    width: 9em;
 }
 
 .nav_links li:hover .dropdown_menu ul {
     display: block;
     position: relative;
-    margin: 1em;
-    margin-top: 10px;
     
 }
 
