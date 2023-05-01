@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .header-logo, .humba-logo, .burger-logo, .sisig-logo{
@@ -212,27 +211,60 @@ ol {
 .container {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
+    height: 0 auto;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: white;
+    background-image: linear-gradient(#da56b7, #da56b7);
 	margin-top: 10%;
 
 }
 .left,
 .right {
     width: 50%;
+    height: 50%;
     display: inline-block;
     box-sizing: border-box;   
 }
 
-.left {
+
+
+.right {
     margin-top: 60px;
 }
 
+.header {
+    margin: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttom{
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+.buttom ol {
+    margin: 20px;
+    padding: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.buttom h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     text-underline-offset: 20px;
     margin-top: 10px;
 }
@@ -241,23 +273,34 @@ table  {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
 }
 
 th, td {
-    padding: 10px 10px;
-    border: 1px solid #F9CEE6;
+    padding: 5px 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid #eaeaea;
 }
 
+
 th {
-    background-color: #ec4b8e;
-    color: white;
+    padding: 5px 5px;
+    margin-left: 10px;
+    background-color: #F6F0C4;
+    color: #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .img-holder {
     margin-top: 50px;
-    border: 2px solid #814768;
+    border: 4px solid #814768;
     margin: 30px;
-    border-radius: 2px;
+    border-radius: 10px;
+    margin-top: 12%;
 }
 
 .img-holder img {
@@ -266,6 +309,8 @@ th {
     display: block;
     border-radius: 5px;
 }
+
+
 
 @media (max-width: 1440px) {
     .container {
@@ -426,6 +471,8 @@ th {
 .Chef-img {
     width: 380px;
     margin-top: 38px;
+    justify-content: center;
+    align-items: center;
 }
 
 
