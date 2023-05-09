@@ -28,7 +28,7 @@ section {
 }
 
 .us {
-    color: #f9004f;
+    color: #fff;
 }
 
 .contact-form p {
@@ -50,7 +50,7 @@ form textarea {
     border: none;
     outline: none;
     background: #fff;
-    color: #b80707;
+    color: #da56b7;
     font-size: 1rem;
     margin-bottom: 0.7rem;
     border-radius: 10px;
@@ -63,7 +63,7 @@ form textarea {
 
 .contact-form form .btn {
     display: inline-block;
-    background: #f9004d;
+    background: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -76,7 +76,7 @@ form textarea {
 }
 
 .contact-form form .btn:hover {
-    border: 2px solid #f9004d;
+    border: 2px solid #da56b7;
     background: transparent;
     transform: scale(1.1);
 }

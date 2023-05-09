@@ -1,0 +1,124 @@
+:root {
+    --background-clr: linear-gradient(#da56b7, #F6F0C4);
+    --br: #da56b7;
+    --b-clr: #e0b8d6;
+    --font-family: 'Roboto', san sarif;
+    --font-size: 20px;
+    --clr-black: #000;
+    --clr-white: #fff; 
+    --rgba: rgba(0, 0, 0, 0.2);
+    --button-clr: #da56b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+
+
+.rcontainer {
+    width: 100%;
+    padding-bottom: 300px;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background-color: var(--br);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rtitle {
+    font-size: var(--font-size);
+    color: var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: var(100vh - 60px);
+}
+
+.submeunu {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-image: var(--br);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.submeunu .submeunu-item {
+    width: 345px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--rgba);
+    background-color: var(--b-clr);
+    overflow: hidden;
+}
+
+.submeunu .submeunu-item img {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.submeunu .submeunu-item img:hover {
+    transform: scale(1.1);
+}
+
+.submeunu .submeunu-item h2 {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.submeunu .submeunu-item button {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    background-color: var(--button-clr);
+    box-shadow: 10px 5px 10px var(--rgba);
+    border-radius: 50px;
+    margin-left: 67px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition: transform 0.3s;
+}
+
+.submeunu .submeunu-item button a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+
+.submeunu .submeunu-item button:hover {
+    background-color: var(--clr-white);
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 700px) {
+    .submeunu {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+    }
+}

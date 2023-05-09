@@ -20,104 +20,268 @@
     scale: 0.95;
 }
 
-body {
-    width: 100%;
-    background-color: #F6F0C4;
-    height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(#da56b7, #F6F0C4);    
 }
 
-form {
-    background-color: #F6F0C4;
-    position: absolute;
-    width: 320px;
-    height: 270px;
-    padding: 10px 5px 20px 5px;
-    margin: -10vh 850px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 6px -7px;
+.container{
+    background-image: linear-gradient(#da56b7, #F6F0C4);    
+    padding-top: 72px;
+    padding-bottom: 112px;
 }
 
-input[type='text'], input[type='password'] {
-    display: block;
-    background-color: #fff;
-    margin: auto;
-    border: 1.5px solid rgb(200, 200, 200);
-    width: 200px;
-    padding: 10px 40px;
-    border-radius: 5px;
-    color: black;
-    font-family: Segoe UI;
-    font-size: 15px;
+.content{
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.content > div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-content{
+    width: 580px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+.f-logo{
+    margin: 110px 0 16px;
+}
+.f-logo > img{
+    height: 106px;
+    margin: -9px;
+}
+
+.f-quote{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
     
 }
 
-button {
-    border: none;
-    background-color: black;
+.card{
+    background: #fff;
+    width: 396px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.input-container > input[type=text],
+.input-container > input[type=password]{
+    width: 100%;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.input-container > input[type=text]:focus,
+.input-container > input[type=password]:focus{
+    border: 1px solid #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff
+}
+
+.login-btn{
+    background: #da56b7;
     color: #fff;
-    margin: auto;
-    width: 283px;
-    display: block;
-    border-radius: 5px;
-    padding: 10px 0;
-    font-weight: bold;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    margin: 10px 0;
     cursor: pointer;
-    text-decoration: none;
 }
 
-
-.f-sus {
-    display: block;
-    width: 200px;
-    margin: auto;
-    color: #1877f2;
-    padding-left: 80px;
-    font-family: "Segoe UI";
-    font-weight: 400;
-}
-
-.line {
-    border-top: 1px solid #222;
-    opacity: 0.2;
-}
-
-.bnt2 {
-    width: 180px;
-    font-size: 14px;
-    background-color: #222;
+.forgotten-password{
     text-align: center;
 }
 
-.sub-link h3 {
-    width: 270px;
-    position: relative;
-    color: black;
-    font-family: Segoe UI, Arial;
-    padding: 130px 890px;
-    font-size: 12px;
-    font-family: 600;
+.forgotten-password > a{
+    font-weight: 600;
+    font-size: 14px;
+    color: #1877f2;
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
 }
 
-.sub-link h3 a {
-    color: #222;
-    font-weight: bold;
-    font-size: 13px;
+.forgotten-password > a:hover{
     text-decoration: underline;
 }
 
-.f-container {
-    width: 350px;
-    margin-left: 300px;
-    margin-top: 30vh;
-    font-family: "Segoe UI" Roboto, "San Francisco";
+.divider{
+    width: 100%;
+    height: 1px;
+    background: #d2d2d2;
 }
 
-.f-container img {
-    width: 250px;
-}
 
-p {
-    font-size: 20px;
+.crt-new-ac{
+    display: inline-block;
+    background: #da56b7;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
     font-weight: 600;
-    word-spacing: 3px;
+    font-size: 17px;
+    margin: 20px 0 7px;
+}
+
+.crt-page{
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.crt-page > a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.f-lg-footer{
+    width: 980px;
+    margin: 30px auto;
+}
+
+.f-lg-footer > ul{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.f-lg-footer > ul > li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.f-lg-footer > ul > li > a{
+    text-decoration: none;
+    color: #777;
+    font-size: 12px;
+}
+
+.fix-m-header{
+    background: #fffbe2;
+    color: #3b5998;
+    text-align: center;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    display: none;
+}
+
+.fix-m-header > span,
+.fix-m-header > img{
+    vertical-align: top;
+}
+
+.fix-m-header > span{
+    line-height: 50px;
+}
+
+.fix-m-header > img{
+    position: relative;
+    top: 10px;
+}
+
+.m-footer{
+    display: none;
+}
+
+@media (max-width: 980px){
+
+    .container{
+        padding-top: 0px;
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    .content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .left-content{
+        width: 100%;
+    }
+    .right-content{
+        width: 100%;
+    }
+
+    .f-lg-footer{
+        display: none;
+    }
+
+    .f-logo{
+        margin: 0 auto; 
+        text-align: center;
+    }
+    .f-logo > img{
+        height: 50px;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .f-quote{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+        box-shadow: none;
+
+    }
+
+    .input-container > input[type=text],
+    .input-container > input[type=password]{
+        background: #f5f6f7;
+    }
+
+    .fix-m-header{
+        display: block;
+    }
+
+    .m-footer{
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .m-footer .m-f-lang > ul:first-child{
+        float: left;
+    }
+    .m-footer .m-f-lang > ul:last-child{
+        float: right;
+    }
+    .m-footer .m-f-lang > ul li{
+        list-style: none;
+    }
+
+    .m-footer .m-f-lang > ul > li > a{
+        text-decoration: none;
+        color: #777;
+    }
+
+    .m-footer .links > a{
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #777;
+        font-weight: 500;
+    }
 }

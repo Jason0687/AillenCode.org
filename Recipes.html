@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crete+Round&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/recipes.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/nextpage.css">
+    <link rel="stylesheet" href="assets/css/contacts.css">
+    <link rel="stylesheet" href="assets/css/mediaQueries.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <nav class="navbar ">
+                <img src="assets/img/bake-logo.png" class="logo">
+                <ul class="nav_links">
+                    <li><a href="main.html">Home</a></li>
+                    <li>
+                        <a class="recipes" href="#">Recipes</a>
+                        
+                        <div class="dropdown_menu">
+                            <ul>
+                                <li><a href="ChocolateCookies.html">Cookies</a></li>
+                                <li><a href="Blueberry Cheesecake.html">Cheesecake</a></li>
+                                <li><a href="Cinnabon.html">Cinnabon</a></li>
+                                <li><a href="Brownies.html">Brownies</a></li>
+                                <li><a href="Doughnuts.html">Doughnuts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li class="login-col"><a  href="login.html">Log In</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <div class="rcontainer">
+            <div class="rtitle">
+                <h1>Our Menu Recipes</h1>
+            </div>
+            <div class="sub-container">
+                <div class="submeunu">
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/Blueberry_Cheesecake.jfif" alt="">
+                        <h2>Blueberry Cheesecake</h2>
+                        <button class="btn"><a href="Blueberry Cheesecake.html">Recipe</a></button>
+                    </div>
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/Brownies.webp" alt="">
+                        <h2>Brownies</h2>
+                        <button class="btn"><a href="Brownies.html">Recipe</a></button>
+                    </div>
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/Chocolate_cookies.webp" alt="">
+                        <h2>Chocolate Cookies</h2>
+                        <button class="btn"><a href="ChocolateCookies.html">Recipe</a></button>
+                    </div>
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/Cinnabon.webp" alt="">
+                        <h2>Cinnabon</h2>
+                        <button class="btn"><a href="Cinnabon.html">Recipe</a></button>
+                    </div>
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/Doughnuts.jpg" alt="">
+                        <h2>Doughnuts</h2>
+                        <button class="btn"><a href="Doughnuts.html">Recipe</a></button>
+                    </div>
+                    <div class="submeunu-item">
+                        <img src="assets/RecipesList/lolasempanada-2.jpg" alt="">
+                        <h2>Curry Empanadas</h2>
+                        <button class="btn"><a href="">Recipe</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <footer class="footer-container">
+            <div class="footer-content">
+                <h3>Bake With Me</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 BakeWithMe. designed Jason &amp; Aillen</p>
+            </div>
+        </footer> 
+     
+
+    <script src="https://kit.fontawesome.com/5245bddf71.js" crossorigin="anonymous"></script>
+    <script>
+
+        const toggleBtn = document.getElementsByClassName('toggle_btn')[0]
+        const navbarLinks = document.getElementsByClassName('nav_links') [0]
+
+        toggleBtn.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

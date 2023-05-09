@@ -24,21 +24,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./assets/js/index.js"></script>
+
     
 </head>
 <header>
     <div class="banner">
-        <nav class="navbar"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        data-aos-doration="3000"
-        >
+        <nav class="navbar ">
             <img src="assets/img/bake-logo.png" class="logo">
             <ul class="nav_links">
                 <li><a href="main.html">Home</a></li>
                 <li>
-                    <a class="recipes" href="#">Recipes</a>
+                    <a class="recipes" href="Recipes.html">Recipes</a>
                     
                     <div class="dropdown_menu">
                         <ul>
@@ -63,39 +60,31 @@
 <body>
     <div class="Hero-mainContent">
         <div class="contain">
-            <img class="Home_girl" src="assets/img/Home.png" alt="Cooking girl" data-aos="zoom-in">
+            <img class="Home_girl" src="assets/img/Home.png" alt="Cooking girl">
 
-            <h1 data-aos="zoom-in">
-                WELCOME!</h1>
+            <h1>WELCOME!</h1>
 
 
-        <p  data-aos="zoom-in">
-            Join us with our home-cooked meals that are just a click away!</p>
+        <p>Join us with our home-cooked meals that are just a click away!</p>
         </div>  
     </div>
     <div class="next-page">
             <div class="one">
-                <h1 data-aos="fade-left" data-aos-doration="700">Find your best recipes <br> easily!</h1>
+                <h1>Find your best recipes <br> easily!</h1>
 
-                <p data-aos="fade-left" data-aos-doration="700">You can also watch tips and steps in this website!</p>
-                <button data-aos="fade-left" class="hero-btn" onclick="location.href='https://www.youtube.com/watch?v=dZR7CuLSy0I'"><i class="fa-sharp fa-solid fa-play"></i>&#32;WATCH</button>
+                <p>You can also watch tips and steps in this website!</p>
+                <button class="hero-btn" onclick="location.href='https://www.youtube.com/watch?v=dZR7CuLSy0I'"><i class="fa-sharp fa-solid fa-play"></i>&#32;WATCH</button>
             </div>
-            <div class="two" 
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <img src="assets/img/Chef.png" class="Chef-img">
             </div>
     </div>
     <div class="food-container">
             <div class="food">
-                <h1 data-aos="fade-left" data-aos-doration="700">Simple Recipes Made For</h1>
-                <p data-aos="fade-left" data-aos-doration="700">real, actual, everyday life</p>
+                <h1>Simple Recipes Made For</h1>
+                <p>real, actual, everyday life</p>
             </div>
-            <div class="bread-content" 
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-            >
+            <div class="bread-content">
                 <div class="bread1-container">
                     <img src="assets/img/b1.png" class="bread1" alt="">      
 
@@ -129,11 +118,10 @@
                     <p>copyright &copy;2023 BakeWithMe. designed Jason &amp; Aillen</p>
                 </div>
             </footer> 
+         
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/5245bddf71.js" crossorigin="anonymous"></script>
         <script>
-            AOS.init();
 
             const toggleBtn = document.getElementsByClassName('toggle_btn')[0]
             const navbarLinks = document.getElementsByClassName('nav_links') [0]

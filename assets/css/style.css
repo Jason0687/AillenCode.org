@@ -73,7 +73,7 @@ body::-webkit-scrollbar{
 
 .dropdown_menu {
     display: none;
-    background-color: #a73a76;
+    background-color: #da56b7;
     margin-top: 0;
     border-radius: 5px;
 
@@ -175,8 +175,21 @@ body::-webkit-scrollbar{
     font-family: 'Abril Fatface', cursive;
     align-items: center;
     color: #fff;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    animation-delay: 4s;
+    animation: slidein;
 }
 
+@keyframes slidein {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
 .contain p {
     font-size: 20px;
     margin: 20px;
@@ -223,7 +236,7 @@ ol {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(#da56b7, #da56b7);
+    background-image: linear-gradient(#f775d4, #f775d4);
 	margin-top: 10%;
 
 }
@@ -312,6 +325,18 @@ th {
     border-radius: 5px;
 }
 
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
 
 @media (max-width: 1440px) {
