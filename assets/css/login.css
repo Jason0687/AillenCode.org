@@ -33,7 +33,7 @@ body{
 .container{
     background-image: linear-gradient(#da56b7, #F6F0C4);    
     padding-top: 72px;
-    padding-bottom: 112px;
+    padding-bottom: 150px;
 }
 
 .content{
@@ -76,10 +76,10 @@ body{
     margin-top: 40px;
 }
 
-.input-container > input[type=text],
-.input-container > input[type=password]{
+.inputcontainer> input[type=text],
+.inputcontainer > input[type=password]{
     width: 100%;
-    padding: 14px 16px;
+    padding: 18px 16px;
     box-sizing: border-box;
     outline: none;
     border: 1px solid #dddfe2;
@@ -88,13 +88,33 @@ body{
     font-size: 17px;
 }
 
-.input-container > input[type=text]:focus,
-.input-container > input[type=password]:focus{
+.inputcontainer > input[type=text]:focus,
+.inputcontainer > input[type=password]:focus{
     border: 1px solid #1877f2;
     box-shadow: 0 0 0 2px #e7f3ff
 }
 
-.login-btn{
+.inputcontainer input:focus {
+    border: 1px solid #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    
+}
+
+.inputcontainer.success input {
+    border-color: #1877f2;
+}
+
+.inputcontainer.error input {
+    border-color: #ff3860;
+}
+
+.inputcontainer .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}   
+
+.login-btn, .signup-btn{
     background: #da56b7;
     color: #fff;
     border-radius: 6px;
@@ -206,6 +226,31 @@ body{
     display: none;
 }
 
+
+
+.already-have-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .already-have-account p {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .already-have-account a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .already-have-account a:hover {
+    text-decoration: underline;
+  }
+  
+
 @media (max-width: 980px){
 
     .container{
@@ -248,8 +293,8 @@ body{
 
     }
 
-    .input-container > input[type=text],
-    .input-container > input[type=password]{
+    .inputcontainer > input[type=text],
+    .inputcontainer > input[type=password]{
         background: #f5f6f7;
     }
 
@@ -285,3 +330,5 @@ body{
         font-weight: 500;
     }
 }
+
+

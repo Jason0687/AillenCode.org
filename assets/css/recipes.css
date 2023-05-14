@@ -36,7 +36,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: var(100vh - 60px);
 }
 
 .submeunu {
@@ -118,7 +117,20 @@
 
 @media only screen and (max-width: 700px) {
     .submeunu {
+        display: grid;
         grid-template-columns: 1fr;
         padding-bottom: 50px;
     }
+    .submeunu .submeunu-item h2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rtitle {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
